@@ -1,6 +1,6 @@
 {
   "name": "@golfvert/node-red-contrib-redis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node Red client for Redis with pub/sub, list, lua scripting  and other commands support. Including the possibility to set cluster mode as an env variable",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,7 @@
     }
   },
   "author": {
-    "name": "Andre Alexandre Avila",
-    "name": "Remy Giraud"
+    "name": "Andre Alexandre Avila, Rémy Giraud"
   },
   "license": "MIT",
   "bugs": {
