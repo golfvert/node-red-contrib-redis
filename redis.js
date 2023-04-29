@@ -8,13 +8,21 @@ module.exports = function (RED) {
   function RedisConfig(n) {
     RED.nodes.createNode(this, n);
     this.name = n.name;
-    this.cluster = n.cluster;
     if (this.optionsType === "") {
       this.options = n.options;
     } else {
       this.options = RED.util.evaluateNodeProperty(
         n.options,
         n.optionsType,
+        this
+      );
+    }
+    if (this.clusterType === "") {
+      this.cluster = n.cluster;
+    } else {
+      this.cluster = RED.util.evaluateNodeProperty(
+        n.cluster,
+        n.clusterType,
         this
       );
     }
