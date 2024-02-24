@@ -8,18 +8,16 @@
                 value: "Local",
                 required: true
             },
-            option: {
-                value: "redis:6379",
+            options: {
+                value: "{}",
                 required: true,
-                validate: RED.validators.typedInput("optionsType")
+                validate: RED.validators.typedInput("optionsType"),
+
             },
             cluster: {
-                value: "disable",
-                required: true,
-                validate: RED.validators.typedInput("clusterType")
+                value: false
             },
-            optionsType: { value: "str" },
-            clusterType: { value: "str" }
+            optionsType: { value: "json" }
         },
         label: function () {
             return this.name || "Redis host";
@@ -30,11 +28,7 @@
                 typeField: "#node-config-input-optionsType",
                 types: ['str', 'env', 'json', 'jsonata']
             });
-            $("#node-config-input-cluster").typedInput({
-                default: 'str',
-                typeField: "#node-config-input-clusterType",
-                types: ['str', 'env', 'json', 'jsonata']
-            });
+
         }
     });
 </script>
@@ -45,14 +39,13 @@
         <input type="text" id="node-config-input-name">
     </div>
     <div class="form-row">
-        <label for="node-config-input-options"><i class="fa fa-random"></i> Server</label>
+        <label for="node-config-input-options"><i class="fa fa-random"></i> Options</label>
         <input type="text" id="node-config-input-options">
         <input type="hidden" id="node-config-input-optionsType">
     </div>
     <div class="form-row">
-        <label for="node-config-input-cluster"><i class="fa fa-server"></i>  Cluster</label>
-        <input type="text" id="node-config-input-cluster">
-        <input type="hidden" id="node-config-input-clusterType">
+        <label for="node-config-input-cluster">&nbsp;</label>
+        <input type="checkbox" id="node-config-input-cluster" style="display:inline-block; width:15px; vertical-align:baseline;"> Cluster
     </div>
 </script>
 
