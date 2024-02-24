@@ -384,7 +384,7 @@ function RedisConfig(n) {
       );
     }
     try {
-      if (config.cluster === "true" || config.cluster === true) {
+      if (config.cluster === "true") {
         connections[id] = new Redis.Cluster(options);
       } else {
         connections[id] = new Redis(options);
