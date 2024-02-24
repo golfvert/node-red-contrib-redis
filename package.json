@@ -1,5 +1,5 @@
 {
-  "name": "@golfvert/node-red-contrib-redis",
+  "name": "@golfvert/node-red-v4-contrib-redis",
   "version": "1.0.1",
   "description": "Node Red client for Redis with pub/sub, list, lua scripting  and other commands support. Including the possibility to set cluster mode as an env variable",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/golfvert/node-red-contrib-redis.git"
+    "url": "git+https://github.com/golfvert/node-red-v4-contrib-redis.git"
   },
   "keywords": [
     "redis",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/golfvert/node-red-contrib-redis/issues"
+    "url": "https://github.com/golfvert/node-red-v4-contrib-redis/issues"
   },
-  "homepage": "https://github.com/golfvert/node-red-contrib-redis#readme",
+  "homepage": "https://github.com/golfvert/node-red-v4-contrib-redis#readme",
   "maintainers": [
     {
       "name": "golfvert",
