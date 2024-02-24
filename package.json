@@ -1,5 +1,5 @@
 {
-  "name": "@golfvert/node-red-v4-contrib-redis",
+  "name": "node-red-v4-contrib-redis",
   "version": "1.0.1",
   "description": "Node Red client for Redis with pub/sub, list, lua scripting  and other commands support. Including the possibility to set cluster mode as an env variable",
   "main": "index.js",
