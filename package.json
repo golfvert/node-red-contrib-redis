@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/golfvert/node-red-v4-contrib-redis.git"
+    "url": "git+https://github.com/golfvert/node-red-redis.git"
   },
   "keywords": [
     "redis",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/golfvert/node-red-v4-contrib-redis/issues"
+    "url": "https://github.com/golfvert/node-red-redis/issues"
   },
-  "homepage": "https://github.com/golfvert/node-red-v4-contrib-redis#readme",
+  "homepage": "https://github.com/golfvert/node-red-redis#readme",
   "maintainers": [
     {
       "name": "golfvert",
